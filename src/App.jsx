@@ -70,11 +70,21 @@
 
 //!25/06/2026
 //!Conditional Rendering
-import React from 'react'
-import ConditionalRendering from './ConditionalRendering/ConditionalRendering'
+// import React from 'react'
+// import ConditionalRendering from './ConditionalRendering/ConditionalRendering'
+
+// const App = () => {
+//   return <ConditionalRendering/>
+// }
+
+// export default App
+
+//!26/06/2026
+//!Events
+import Events from './Events/Events'
 
 const App = () => {
-  return <ConditionalRendering/>
+  return <Events/>
 }
 
 export default App
