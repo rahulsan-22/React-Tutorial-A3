@@ -81,10 +81,26 @@
 
 //!26/06/2026
 //!Events
-import Events from './Events/Events'
+// import Events from './Events/Events'
+
+// const App = () => {
+//   return <Events/>
+// }
+
+// export default App
+
+//!29/06/2026
+//!State
+import Counter from './State/Counter'
+import Theme from './State/Theme'
+import User from './State/User'
 
 const App = () => {
-  return <Events/>
+  return <>
+    <Counter />
+    <User />
+    <Theme/>
+  </>
 }
 
 export default App
