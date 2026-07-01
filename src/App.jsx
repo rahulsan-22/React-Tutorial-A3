@@ -91,15 +91,38 @@
 
 //!29/06/2026
 //!State
-import Counter from './State/Counter'
-import Theme from './State/Theme'
-import User from './State/User'
+// import Counter from './State/Counter'
+// import Theme from './State/Theme'
+// import User from './State/User'
+
+// const App = () => {
+//   return <>
+//     <Counter />
+//     <User />
+//     <Theme/>
+//   </>
+// }
+
+// export default App
+
+//!30/06/2026
+//!Lifecycle Methods
+import ErrorBoundary from './LifecycleMethods/ErrorBoundary'
+import Lifecycle from './LifecycleMethods/Lifecycle'
+import Welcome from './LifecycleMethods/Welcome'
 
 const App = () => {
   return <>
-    <Counter />
-    <User />
-    <Theme/>
+    <Lifecycle/>
+    <ErrorBoundary>
+      <Welcome name="Pavan" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <Welcome name="Monty" />
+    </ErrorBoundary>
+    <ErrorBoundary>
+      <Welcome name="Yasin" />
+    </ErrorBoundary>
   </>
 }
 
