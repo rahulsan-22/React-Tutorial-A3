@@ -107,23 +107,33 @@
 
 //!30/06/2026
 //!Lifecycle Methods
-import ErrorBoundary from './LifecycleMethods/ErrorBoundary'
-import Lifecycle from './LifecycleMethods/Lifecycle'
-import Welcome from './LifecycleMethods/Welcome'
+// import ErrorBoundary from './LifecycleMethods/ErrorBoundary'
+// import Lifecycle from './LifecycleMethods/Lifecycle'
+// import Welcome from './LifecycleMethods/Welcome'
+
+// const App = () => {
+//   return <>
+//     <Lifecycle/>
+//     <ErrorBoundary>
+//       <Welcome name="Pavan" />
+//     </ErrorBoundary>
+//     <ErrorBoundary>
+//       <Welcome name="Monty" />
+//     </ErrorBoundary>
+//     <ErrorBoundary>
+//       <Welcome name="Yasin" />
+//     </ErrorBoundary>
+//   </>
+// }
+
+// export default App
+
+//!02/07/2026
+//!useState()
+import State from './useState/State'
 
 const App = () => {
-  return <>
-    <Lifecycle/>
-    <ErrorBoundary>
-      <Welcome name="Pavan" />
-    </ErrorBoundary>
-    <ErrorBoundary>
-      <Welcome name="Monty" />
-    </ErrorBoundary>
-    <ErrorBoundary>
-      <Welcome name="Yasin" />
-    </ErrorBoundary>
-  </>
+  return <State/>
 }
 
 export default App
