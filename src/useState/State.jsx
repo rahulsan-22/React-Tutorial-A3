@@ -90,3 +90,55 @@
 //   )
 // }
 // export default State
+
+//!Example 5 : Object State
+import { useState } from 'react'
+const State = () => {
+  let [details,setDetails] = useState({
+    name: "Monty",
+    age: 25
+  })
+  let { name, age } = details
+  let handleAge = () => {
+    setDetails({...details,age:28})
+  }
+  return (
+    <div>
+      <h1>Name: {name}</h1>
+      <p>I am {age} years old</p>
+      <button onClick={handleAge}>Update Age</button>
+    </div>
+  )
+}
+export default State
+
+//!Funtional Updates
+import React, { useState } from 'react'
+
+const State = () => {
+  let [count, setCount] = useState(0)
+  let handleIncrement = () => {
+    setCount((prevCount) => {
+      console.log(prevCount)
+      return prevCount + 1
+    });
+  }
+  let handleDecrement = () => {
+    setCount((prevCount) => {
+      console.log(prevCount)
+      return prevCount - 1
+    });
+  }
+  let handleReset = () => {
+    setCount(0);
+  }
+  return (
+    <div>
+      <h1>Count : {count}</h1>
+      <button onClick={handleIncrement}>Increment</button>
+      <button onClick={handleDecrement}>Decrement</button>
+      <button onClick={handleReset}>Reset</button>
+    </div>
+  )
+}
+export default State

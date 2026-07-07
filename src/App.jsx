@@ -130,10 +130,20 @@
 
 //!02/07/2026
 //!useState()
-import State from './useState/State'
+// import State from './useState/State'
+
+// const App = () => {
+//   return <State/>
+// }
+
+// export default App
+
+//!07/07/2026
+//!useEffect()
+import Effect from './useEffect/Effect'
 
 const App = () => {
-  return <State/>
+  return <Effect/>
 }
 
 export default App
