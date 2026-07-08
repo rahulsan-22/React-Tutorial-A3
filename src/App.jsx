@@ -140,10 +140,32 @@
 
 //!07/07/2026
 //!useEffect()
-import Effect from './useEffect/Effect'
+// import Effect from './useEffect/Effect'
+
+// const App = () => {
+//   return <Effect/>
+// }
+
+// export default App
+
+//!08/07/2026
+//!useContext()
+import Dilsukhnagar from './useContext/Dilsukhnagar'
+import { AlertContext, CafeContext, ChipsContext, IcecreamContext } from './useContext/Zepto'
 
 const App = () => {
-  return <Effect/>
+  let snacks = { item1: "Burger", item2: "Fries", item3: "Coffee" }
+  let warning = ()=> alert("useContext Completed 🥳")
+  return <>
+    <IcecreamContext.Provider value="Cup Ice">
+      <ChipsContext.Provider value="Lays">
+        <CafeContext.Provider value={snacks}>
+          <AlertContext.Provider value={warning}>
+            <Dilsukhnagar />
+          </AlertContext.Provider>
+        </CafeContext.Provider>
+      </ChipsContext.Provider>
+    </IcecreamContext.Provider>
+  </>
 }
-
 export default App
