@@ -150,22 +150,33 @@
 
 //!08/07/2026
 //!useContext()
-import Dilsukhnagar from './useContext/Dilsukhnagar'
-import { AlertContext, CafeContext, ChipsContext, IcecreamContext } from './useContext/Zepto'
+// import Dilsukhnagar from './useContext/Dilsukhnagar'
+// import { AlertContext, CafeContext, ChipsContext, IcecreamContext } from './useContext/Zepto'
+
+// const App = () => {
+//   let snacks = { item1: "Burger", item2: "Fries", item3: "Coffee" }
+//   let warning = ()=> alert("useContext Completed 🥳")
+//   return <>
+//     <IcecreamContext.Provider value="Cup Ice">
+//       <ChipsContext.Provider value="Lays">
+//         <CafeContext.Provider value={snacks}>
+//           <AlertContext.Provider value={warning}>
+//             <Dilsukhnagar />
+//           </AlertContext.Provider>
+//         </CafeContext.Provider>
+//       </ChipsContext.Provider>
+//     </IcecreamContext.Provider>
+//   </>
+// }
+// export default App
+
+//!09/07/2026
+//!useRef()
+import React from 'react'
+import Reference from './useRef/Reference'
 
 const App = () => {
-  let snacks = { item1: "Burger", item2: "Fries", item3: "Coffee" }
-  let warning = ()=> alert("useContext Completed 🥳")
-  return <>
-    <IcecreamContext.Provider value="Cup Ice">
-      <ChipsContext.Provider value="Lays">
-        <CafeContext.Provider value={snacks}>
-          <AlertContext.Provider value={warning}>
-            <Dilsukhnagar />
-          </AlertContext.Provider>
-        </CafeContext.Provider>
-      </ChipsContext.Provider>
-    </IcecreamContext.Provider>
-  </>
+  return <Reference/>
 }
+
 export default App
