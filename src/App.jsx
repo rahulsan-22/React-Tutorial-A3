@@ -194,29 +194,47 @@
 
 //!14/07/2026
 //!useCallback()
-import React, { useCallback, useState } from 'react'
-import Title from './useCallback/Title'
-import Count from './useCallback/Count'
-import Button from './useCallback/Button'
+// import React, { useCallback, useState } from 'react'
+// import Title from './useCallback/Title'
+// import Count from './useCallback/Count'
+// import Button from './useCallback/Button'
 
+// const App = () => {
+//   let [age, setAge] = useState(25)
+//   let [salary, setSalary] = useState(10000)
+//   let handleAge = useCallback(() => {
+//     setAge(age + 1)
+//   }, [age])
+//   let handleSalary = useCallback(() => {
+//     setSalary(salary + 10000)
+//   }, [salary])
+//   return (
+//     <div>
+//       <Title />
+//       <Count text="Age" count={age} />
+//       <Button fun={handleAge}>Increment Age</Button>
+//       <Count text="Salary" count={salary} />
+//       <Button fun={handleSalary}>Increment Salary</Button>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//!15/07/2026
+//!Adding Styles
+import Global from './AddingStyles/Global'
+import Header from './AddingStyles/Header'
+import Inline from './AddingStyles/Inline'
+import Navbar from './AddingStyles/Navbar'
+// import "./index.css"
 const App = () => {
-  let [age, setAge] = useState(25)
-  let [salary, setSalary] = useState(10000)
-  let handleAge = useCallback(() => {
-    setAge(age + 1)
-  }, [age])
-  let handleSalary = useCallback(() => {
-    setSalary(salary + 10000)
-  }, [salary])
-  return (
-    <div>
-      <Title />
-      <Count text="Age" count={age} />
-      <Button fun={handleAge}>Increment Age</Button>
-      <Count text="Salary" count={salary} />
-      <Button fun={handleSalary}>Increment Salary</Button>
-    </div>
-  )
+  return <>
+    {/* <Inline /> */}
+    {/* <Global /> */}
+    {/* <Header/> */}
+    <Navbar/>
+  </>
 }
 
 export default App
