@@ -223,17 +223,30 @@
 
 //!15/07/2026
 //!Adding Styles
-import Global from './AddingStyles/Global'
-import Header from './AddingStyles/Header'
-import Inline from './AddingStyles/Inline'
-import Navbar from './AddingStyles/Navbar'
+// import Global from './AddingStyles/Global'
+// import Header from './AddingStyles/Header'
+// import Inline from './AddingStyles/Inline'
+// import Navbar from './AddingStyles/Navbar'
 // import "./index.css"
+// const App = () => {
+// return <>
+{/* <Inline /> */ }
+{/* <Global /> */ }
+{/* <Header/> */ }
+{/* <Navbar/> */ }
+// </>
+// }
+
+// export default App
+
+//!17/07/2026
+//!Form Handling
+import React from 'react'
+import ControlledComponent from './FormHandling/ControlledComponent'
+
 const App = () => {
   return <>
-    {/* <Inline /> */}
-    {/* <Global /> */}
-    {/* <Header/> */}
-    <Navbar/>
+    <ControlledComponent/>
   </>
 }
 
