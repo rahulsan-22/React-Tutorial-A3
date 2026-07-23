@@ -241,12 +241,24 @@
 
 //!17/07/2026
 //!Form Handling
-import React from 'react'
-import ControlledComponent from './FormHandling/ControlledComponent'
+// import React from 'react'
+// import ControlledComponent from './FormHandling/ControlledComponent'
+
+// const App = () => {
+//   return <>
+//     <ControlledComponent/>
+//   </>
+// }
+
+// export default App
+
+//!23/07/2026
+//!Axios
+import FetchData from './Axios/FetchData'
 
 const App = () => {
   return <>
-    <ControlledComponent/>
+    <FetchData/>
   </>
 }
 
