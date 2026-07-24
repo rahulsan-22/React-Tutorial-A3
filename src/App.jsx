@@ -254,12 +254,36 @@
 
 //!23/07/2026
 //!Axios
-import FetchData from './Axios/FetchData'
+// import FetchData from './Axios/FetchData'
 
+// const App = () => {
+//   return <>
+//     <FetchData/>
+//   </>
+// }
+
+// export default App
+
+//!24/07/2026
+//!Router
+import {Routes,Route} from "react-router-dom"
+import Home from "./Router/Home"
+import About from "./Router/About"
+import Contact from "./Router/Contact"
+import NotFound from "./Router/NotFound"
+import Navbar from "./Router/Navbar"
+import "./Router.css"
 const App = () => {
-  return <>
-    <FetchData/>
-  </>
+  return (
+    <>
+      <Navbar />
+      <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="*" element={<NotFound/>} />
+    </Routes>
+    </>
+  )
 }
-
 export default App
